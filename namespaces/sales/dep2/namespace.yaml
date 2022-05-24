@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   name: dep2
   labels:
-    app: dep1
+    app: dep2
