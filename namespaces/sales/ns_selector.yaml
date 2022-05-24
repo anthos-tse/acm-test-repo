@@ -1,7 +1,7 @@
 kind: NamespaceSelector
 apiVersion: configmanagement.gke.io/v1
 metadata:
-  name: dep1-selector
+  name: dep2-selector
 spec:
   selector:
     matchLabels:
