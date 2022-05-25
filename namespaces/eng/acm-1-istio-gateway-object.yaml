@@ -1,0 +1,28 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: asm-gateway
+  namespace: asm-gateway
+  annotations:
+    configmanagement.gke.io/cluster-selector: selector-env-ssu
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 80
+      protocol: HTTP2
+      name: http
+    hosts:
+    - "*"
+    tls:
+      httpsRedirect: true
+  - port:
+      number: 443
+      protocol: HTTPS
+      name: https-wildcard
+    hosts:
+    - "*"
+    tls:
+      mode: SIMPLE
+      credentialName: playground-ssu-gke-wildcard

@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: eng
+  name: asm-gateway
   labels:
-    app: eng
+    app: asm-gateway
   annotations:
     configmanagement.gke.io/cluster-selector: selector-acm-1
