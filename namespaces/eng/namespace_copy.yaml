@@ -5,4 +5,4 @@ metadata:
   labels:
     app: eng
   annotations:
-    configmanagement.gke.io/cluster-selector: acm-2
+    configmanagement.gke.io/cluster-selector: selector-acm-2
