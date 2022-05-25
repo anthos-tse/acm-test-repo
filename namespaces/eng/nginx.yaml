@@ -5,9 +5,10 @@ metadata:
   namespace: eng
   labels:
    app: nginx
-  #annotations:
+  annotations:
     #configsync.gke.io/cluster-name-selector: acm-1
     #configmanagement.gke.io/namespace-selector: dep1-selector
+    configmanagement.gke.io/cluster-selector: all-clusters
 spec:
   replicas: 1
   selector:
