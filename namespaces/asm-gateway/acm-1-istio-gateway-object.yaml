@@ -4,7 +4,7 @@ metadata:
   name: asm-gateway
   namespace: asm-gateway
   annotations:
-    configmanagement.gke.io/cluster-selector: acm-1
+    configmanagement.gke.io/cluster-selector: selector-acm-1
 spec:
   selector:
     istio: ingressgateway
