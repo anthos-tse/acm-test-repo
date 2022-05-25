@@ -6,4 +6,4 @@ metadata:
 spec:
   selector:
     matchLabels:
-      environment: central
+      location: central
