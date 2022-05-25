@@ -1,8 +1,0 @@
-kind: NamespaceSelector
-apiVersion: configmanagement.gke.io/v1
-metadata:
-  name: dep2-selector
-spec:
-  selector:
-    matchLabels:
-      app: dep2
