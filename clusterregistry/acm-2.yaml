@@ -4,4 +4,4 @@ metadata:
   name: acm-2
   labels:
     environment: test
-    location: west
+    location: central

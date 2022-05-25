@@ -5,5 +5,5 @@ metadata:
   name: all-clusters
 spec:
   selector:
-    matchExpressions:
-      - {key: cluster_name, operator: In, values: [acm-1,acm-2]}
+    matchLabels:
+      environment: central
